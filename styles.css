@@ -1,0 +1,177 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body{
+    background:rgb(199, 182, 193);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+   
+}
+.container
+{
+    position:relative;
+    width:70%;
+    min-width:800px;
+    min-height:800px;
+    background:#fff;
+    margin:35px;
+    display:grid;
+    grid-template-columns:2fr 5fr;
+}
+.text-hello{
+    color:white;
+}
+.container .left
+{
+    position:relative;
+    background-color: #6a4362;
+    padding:40px;
+    width:350px;
+   
+}
+.container .right
+{
+    position:relative;
+    background-color: #fff;
+    padding:10px;
+}
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.profileText
+{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+    border-bottom:1px solid rgba(255,255,255,0,2);
+}
+.profileText .profileImg
+{
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+   
+}
+.profileText .profileImg img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.profileText h2{
+    color:#fff;
+    font-size:1.5em;
+    margin-top:20px;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight:600;
+    line-height:1.4em;
+}
+.Info
+{
+    padding:10px;
+}
+.title
+{
+    color:#050505;
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing:0.4px;
+    margin-bottom:5px;
+}
+.Info{
+    position:relative;
+}
+.Info ul li{
+    position:relative;
+    list-style:none;
+    margin:10px 0;
+    cursor:pointer;
+}
+.Infoeducation
+{
+    color:#0b0b0b;
+}
+.Infolanguage
+{
+    color:#080808;
+}
+.title2
+{
+    color:#090809;
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing:0.4px;
+    margin-bottom:5px;
+}
+.about ul h3{
+    color:#6a4362;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+align-items: center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+background: #c1baba;
+}
+.skills .box .percent div 
+{
+position: absolute;
+top: 0;
+left: 00;
+height: 100%;
+background: #6a4362;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li 
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa 
+{
+    color: #6a4362;
+    font-size: 14px;
+    width: 20px;
+}
+a{
+    color:#000000;
+    text-decoration: none;
+}
+
+
+
