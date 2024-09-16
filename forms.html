@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height: 100vh;
+                background-color:rgb(172, 214, 211);
+            }
+            .container
+            {
+                display:flex;
+                gap:90px;
+                border-radius:2px;
+                border: 1px solid rgb(10, 10, 10);
+                border-collapse:collapse;
+                width:250px;
+                height:250px;
+                background-color:rgb(237, 237, 241);
+                justify-content:center;
+                align-items:center;
+            }
+            .login-form
+            {
+                display:flex;
+                flex-direction:column;
+                gap:18px;
+                justify-content:center;
+                align-items:center;
+                
+            }
+            .submit-btn
+            {
+                background-color:rgb(47, 144, 218);
+                width:100px;
+                justify-content:center;
+                align-items:center;
+                color:black;
+            }
+            input{
+                border: 0px solid rgb(10, 10, 10);
+            }
+            input:focus{
+                border-bottom:1px;
+                color:blue;
+            }
+            .submit-btn:focus{
+                background-color:rgb(26, 170, 18);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" >
+            <form class="login-form" onsubmit="formdata(event)">
+                <br>
+            <input type="name" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="number" id="number" placeholder="Phone">
+            <input type="number" id="age" placeholder="Age">
+            <input type="submit" value="Register" class="submit-btn"><br>
+        </form>
+        </div>
+        
+    </body>
+    <script>
+        function formdata(e)
+        {
+            e.preventDefault();
+           let name=document.getElementById("name").value
+           let email=document.getElementById("email").value
+           let number=document.getElementById("number").value
+           let age=document.getElementById("age").value
+           if(name!=="" && email!=="" && number!==0 && age!==0)
+           {
+            if(name==="Darsini" && email==="darsini@gmail.com")
+            {
+                console.log("Already exist")
+            }else{
+            console.log("Yes")
+        }
+           }
+           else{
+            console.log("No")
+           }
+           //console.log(name);
+
+           const data ={
+            username:name,
+            useremail:email,
+            usernumber:number,
+            usertype:age>18?'Major':'Minor'
+           
+           };
+           const {username,useremail,usernumber,userage,usertype}=data
+           console.log(useremail,usertype);
+        }
+    </script>
+</html>

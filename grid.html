@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  
+  <style>
+    .container
+    {
+      display:grid;
+      height:100vh;
+      width:100vw;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows:1fr 1fr 1fr;
+      grid-gap:1px;
+      
+    }
+    .box
+    {
+      display:grid;
+      text-align:center;
+      justify-content:center;
+      align-items:center;
+      font-weight:bold;
+    }
+    .red
+    {
+      background-color:red;
+      grid-row:2/3;     
+      grid-column:2/3;
+      
+    }
+    .blue
+    {
+      background-color:blue;
+      grid-row:3/4;     
+      grid-column:-2/-1;
+      
+    }
+    .green
+    {
+      background-color:green;
+    }
+    @media only screen and (max-width:600px)
+    {
+      .red
+    {
+      background-color:rgb(238, 142, 142);
+    }
+    .blue
+    {
+      background-color:rgb(94, 94, 168);
+    }
+    .green
+    {
+      background-color:rgb(128, 199, 128);
+    }
+      
+    }
+    @media only screen and (min-width:600px)
+    {
+      .red
+    {
+      background-color:rgb(211, 78, 78);
+    }
+    .blue
+    {
+      background-color:rgb(85, 85, 208);
+    }
+    .green
+    {
+      background-color:rgb(72, 154, 72);
+    }
+      
+    }
+    @media only screen and (min-width:768px)
+    {
+      .red
+    {
+      background-color:rgb(135, 8, 8);
+    }
+    .blue
+    {
+      background-color:rgb(9, 9, 98);
+    }
+    .green
+    {
+      background-color:rgb(9, 85, 9);
+    }
+      
+    }
+    @Keyframes myanimation{
+      0%{
+        transform:translateX(-100%);
+        rotate:90deg;
+        scale:0%;
+        opacity:0.1;
+     }
+     50%{
+       transform:translateX(0%);
+       rotate:180deg;
+       scale:50%;
+       opacity:0.5;
+     }
+     100%{
+       transform:translateX(100%);
+       rotate:90deg;
+       scale:360%;
+     }
+    }
+     .green{
+       animation:2s myanimation ease-in; 
+     }
+     .red{
+      animation:2s myanimation ease-in; 
+    }
+    .blue{
+      animation:2s myanimation ease-in; 
+    }
+    .container .fa 
+{
+    color: #6a4362;
+    font-size: 14px;
+    width: 20px;
+}
+.blue:hover{
+  background-color:yellow;
+  transition:2s background-color ease-in;
+}
+  
+
+
+      
+  </style>
+</head>
+<body>
+ <div class="container">
+  😍
+  <i class="fa fa-laptop" aria-hidden="true"></i>
+  <div class="box red">RED</div>
+  <div class="box blue">BLUE</div>
+  <div class="box green">GREEN</div>
+ </div>
+
+</body>
+</html>

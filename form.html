@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color:lavender;
+        }
+        .hello
+        {
+            background-color:rgb(18, 108, 244);
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse:collapse;
+            width:350px;
+          }
+          .center {
+            margin-left: auto;
+            margin-right: auto;
+          }
+    </style>
+</head>
+<body>
+    
+<table class="center">
+    
+
+    <form>
+        <tr>
+           <th> 
+        
+        <h2>FORM VALIDATION</h2>
+        </th>
+        </tr>
+        <tr>
+            <td>
+        <label>Enter your name: </label><br><br>
+        <input type="text">
+
+        <br>
+        <br>
+        
+        <label>Enter your age: </label><br><br>
+        <input type="number">
+   
+        <br>
+        <br>
+       
+        <label>Enter your email: </label><br><br>
+        <input type="email" placeholder="abc@gmail.com">
+    
+        <br>
+        <br>
+       
+        <label>Gender</label><br><br>
+        <input type="checkbox">Male
+        <input type="checkbox">Female
+        <br><br>
+  
+        <label>Address</label><br><br>
+        <textarea></textarea><br><br>
+   
+        <label>Upload your resume:</label><br><br>
+        <input type="file" required>
+   
+        <br>
+        <br>
+       
+        <label>Select your fav color:</label><br><br>
+        <input type="color">
+    
+        <br><br>
+       
+        <label>Choose your favourite game:</label><br><br>
+        <select>
+           <option>Cricket</option>
+           <option>Football</option>
+           <option>Tennis</option>
+        </select>
+    
+        <br><br>
+       
+        <label>Current year:</label><br><br>
+        <input type="radio">3rd year
+        <input type="radio">Final year
+    
+        <br><br>
+        
+        <input type="Submit" class="hello">
+    
+       
+    </table>
+    </form> 
+</body>
+</html>
